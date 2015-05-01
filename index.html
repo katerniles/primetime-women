@@ -15,15 +15,26 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <!-- responsive nav js -->
         <script src="./js/responsive-nav.js"></script>
+    <script>
+    $( document ).ready(function() {
+        console.log( "document loaded" );
+    });
+ 
+    $( window ).load(function() {
+        console.log( "window loaded" );
+    });
 
+    </script>
         <!-- Collect the nav links, forms, and other content for toggling. -->
         
         <body data-spy="scroll" data-target=".navbar">
+        <nav>
             <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <div class="container-fluid">
                     <div class="navbar-header" style="float: right; height: 50px">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color: gold">
-                            <div class="navbar-collapse collapse"   style="border-color: gold">	<span class="sr-only">Toggle navigation</span>
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse" style="background-color: gold">
+                            <div class="navbar-collapse collapse" style="border-color: gold">	
+                            <span class="sr-only">Toggle navigation</span>
 
 	<span class="icon-bar"></span>
 	<span class="icon-bar"></span>
@@ -33,15 +44,15 @@
 
                         <div class="collapse navbar-collapse" id=".navbar-collapse">
                             <ul class="nav navbar-nav" style="background-color: #222">
-                                <li class="active"><a href="file://localhost/Users/katerussell/Desktop/primetime-women/index.html">Home</a>
+                                <li class="active"><a href="#">Home</a>
                                 </li>
-                                <li><a href="file://localhost/Users/katerussell/Desktop/primetime-women/index.html#history">History</a>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#history">History</a>
                                 </li>
-                                <li><a href="file://localhost/Users/katerussell/Desktop/primetime-women/index.html#careers">Careers</a>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#careers">Careers</a>
                                 </li>
-                                <li><a href="file://localhost/Users/katerussell/Desktop/primetime-women/index.html#portfolio">Others</a>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#portfolio">Others</a>
                                 </li>
-                                <li><a href="file://localhost/Users/katerussell/Desktop/primetime-women/index.html#contact">Contact Us</a>
+                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#contact">Contact Us</a>
                                 </li>
                             </ul>
                             <!--end ul navbar-nav-->
@@ -51,10 +62,10 @@
                     <!--end navbar-header -->
                 </div>
                 <!-- end container-fluid-->
-                <div class="projectName">	<a href="file://localhost/Users/katerussell/Desktop/primetime-women/index.html#">Primetime Women in Tech</a>
+                <div class="projectName">	<a href="#">Primetime Women in Tech</a>
                 </div>
                 <!--end projectName" -->
-            </div>
+            </div></nav>
             <!--end nav navbar-->
             <div class="header" style="padding: 5em 0 0 2em">
 
@@ -125,21 +136,21 @@
                         <p>First, you need to honestly ask yourself what you want to be when you grow up. We are not our parents, retiring to a golf community at the age of 65. We can expect to live longer and contribute more for longer than any prior generation. Get involved now in order to make your biggest contribution!</p>
                         <p>Do you want to build websites? Program computers? Test for usability? Help businesses (including nonprofits) optimize their websites? There are so many career choices you can make! Check out what's available and of interest to you, and then talk with others already in the field to make sure it's what you want.</p>
                         <p>After you have chosen areas of interest, check out the educational requirements. These days, you don't necessarily need a computer science degree, and most training can be obtained from online programs that allow you to learn at your own pace.</p>
-                        <p><a class="btn btn-default" href="file://localhost/Users/katerussell/Desktop/primetime-women/index.html#" role="button">View details »</a>
+                        <p><a class="btn btn-default" href="#" role="button">View details »</a>
                         </p>
                     </div>
                     <div class="col-md-4">
                         	<h2>Why Primetime?</h2>
 
                         <p>This website and community are for you. We want to encourage other women around our age to explore career and educational opportunities. We want others to feel that they are not alone in their paths; we are all in this together. We want to build a better world for primetime women choosing to work in technology.</p>
-                        <p><a class="btn btn-default" href="file://localhost/Users/katerussell/Desktop/primetime-women/index.html#" role="button">View details »</a>
+                        <p><a class="btn btn-default" href="#" role="button">View details »</a>
                         </p>
                     </div>
                     <div class="col-md-4">
                         	<h2>Course Goals</h2>
 
                         <p>I have been toying with online resources for learning web development for a few years, unsure if I wanted to go this route. I have determined that I do, so this program will provide me the education (and confidence?) to strike out and call myself a web developer, able to work alongside the best newcomers and learn to be among the best old-timers at some point. I'm not one who stops after learning the basics, but will continue to learn for as long as I am able.</p>
-                        <p><a class="btn btn-default" href="file://localhost/Users/katerussell/Desktop/primetime-women/index.html#" role="button">View details »</a>
+                        <p><a class="btn btn-default" href="#" role="button">View details »</a>
                         </p>
                     </div>
                 </div>
@@ -150,7 +161,7 @@
                     <div class="panel-group" id="accordion">
                         <div class="panel panel-new">
                             	<h3 class="panel-title-new">
-		<a data-toggle="collapse" data-parent="#accordion" href="file://localhost/Users/katerussell/Desktop/primetime-women/index.html#collapseOne">What kinds of jobs are out there?</a>
+		<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What kinds of jobs are out there?</a>
 	</h3>
 
                         </div>
@@ -171,7 +182,7 @@
                         </div>
                         <div class="panel panel-new">
                             	<h3 class="panel-title-new">
-		<a data-toggle="collapse" data-parent="#accordion" href="file://localhost/Users/katerussell/Desktop/primetime-women/index.html#collapseTwo">Aren't I too old to work in tech?</a>
+		<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Aren't I too old to work in tech?</a>
 	</h3>
 
                         </div>
@@ -184,7 +195,7 @@
                         </div>
                         <div class="panel panel-new">
                             	<h3 class="panel-title-new">
-		<a data-toggle="collapse" data-parent="#accordion" href="file://localhost/Users/katerussell/Desktop/primetime-women/index.html#collapseThree">What's it like for a woman in tech?</a>
+		<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">What's it like for a woman in tech?</a>
 	</h3>
 
                         </div>
@@ -274,7 +285,7 @@
             </script>
             <script type="text/javascript">
             var $root = $('html, body');
-            $('.navbar-nav a').click(function() {
+            $('.navbar-nav a').click(collapse() {
                 var href = $.attr(this, 'href');
                 $root.animate({
                     scrollTop: $(href).offset().top}, 500, function () {
@@ -283,7 +294,10 @@
                 return false;
             });
             </script>
-                    
+    <footer> 
+    <div>&copy; PrimeTime Women 2015</div>
+    </footer>                
         </body>
+
 
 </html>
