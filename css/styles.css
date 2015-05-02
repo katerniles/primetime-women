@@ -10,6 +10,24 @@ body {
     position: relative;
     margin-right: 10%;
 }
+#video {
+    text-align: center;
+    padding: 1em 0 0 1em;
+}
+<style type="text/css">
+ 
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+ 
+</style>
+.twitter-share-button {
+    margin-left: 85%;
+}
 .anchordiv {
     padding-top: 100px;
 }
