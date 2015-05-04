@@ -1,75 +1,85 @@
 <!DOCTYPE html>
-
 <html lang="en">
     
     <head>
-
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
         <title>Index</title>
-         <link rel="stylesheet" href="file://localhost/Users/katerussell/Desktop/primetime-women/css/responsive-nav.css">
+        <link rel="stylesheet" href="file://localhost/Users/katerussell/Desktop/primetime-women/css/responsive-nav.css">
         <link href="file://localhost/Users/katerussell/Desktop/primetime-women/css/styles.css" rel="stylesheet">
         <link href="file://localhost/Users/katerussell/Desktop/primetime-women/css/normalize.css" rel="stylesheet">
-         <link href="file://localhost/Users/katerussell/Desktop/primetime-women/css/bootstrap.css" rel="stylesheet">
-         <!-- Bootstrap core CSS -->
+        <link href="file://localhost/Users/katerussell/Desktop/primetime-women/css/bootstrap.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
         <!-- responsive nav js -->
         <script src="./js/responsive-nav.js"></script>
-    <script>
-    $( document ).ready(function() {
-        console.log( "document loaded" );
-    });
- 
-    $( window ).load(function() {
-        console.log( "window loaded" );
-    });
-    </script>
-   
+        <script src="./js/formvalidation.js"></script>
+        <script>
+            $(document).ready(function() {
+                console.log("document loaded");
+            });
+
+            $(window).load(function() {
+                console.log("window loaded");
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                // Target your .container, .wrapper, .post, etc.
+                $("#thing-with-videos").fitVids();
+            });
+        </script>
         <!-- Collect the nav links, forms, and other content for toggling. -->
-<body data-spy="scroll" data-target=".navbar">
+        
+        <body data-spy="scroll" data-target=".navbar">
+            <nav>
+                <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header" style="float: right; height: 50px">
+                            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse" style="background-color: gold">
+                                <div class="navbar-collapse collapse" style="border-color: gold"> <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
 
-       <nav>
-            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                <div class="container-fluid">
-                    <div class="navbar-header" style="float: right; height: 50px">
-                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse" style="background-color: gold">
-                            <div class="navbar-collapse collapse" style="border-color: gold">	
-                            <span class="sr-only">Toggle navigation</span>
+                                </div>
+                            </button>
+                            <div class="collapse navbar-collapse" id=".navbar-collapse">
+                                <ul class="nav navbar-nav" style="background-color: #222">
+                                    <li class="active"><a href="#">Home</a>
 
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#history">History</a>
+
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#careers">Careers</a>
+
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#portfolio">Others</a>
+
+                                    </li>
+                                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#contact">Contact Us</a>
+
+                                    </li>
+                                </ul>
+                                <!--end ul navbar-nav-->
                             </div>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id=".navbar-collapse">
-                            <ul class="nav navbar-nav" style="background-color: #222">
-                                <li class="active"><a href="#">Home</a>
-                                </li>
-                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#history">History</a>
-                                </li>
-                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#careers">Careers</a>
-                                </li>
-                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#portfolio">Others</a>
-                                </li>
-                                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#contact">Contact Us</a>
-                                </li>
-                            </ul>
-                            <!--end ul navbar-nav-->
+                            <!--end navbar-collapse -->
                         </div>
-                        <!--end navbar-collapse -->
+                        <!--end navbar-header -->
                     </div>
-                    <!--end navbar-header -->
-                </div>
-                <!-- end container-fluid-->
-                <div class="projectName">	<a href="#">Primetime Women in Tech</a>
-                </div>
-                <!--end projectName" -->
-            </div></nav>
-            <!--end nav navbar-->
-           <div class="header" style="padding: 5em 0 0 2em">
+                    <!-- end container-fluid-->
+                    <div class="projectName">   <a href="#">Primetime Women in Tech</a>
 
-                	<h1>It's Time ...</h1>
+                    </div>
+                    <!--end projectName" -->
+                </div>
+            </nav>
+            <!--end nav navbar-->
+            <div class="header" style="padding: 5em 0 0 2em">
+                    <h1>It's Time ...</h1>
+
             </div>
             <!--end header -->
             <!-- Carousel -->
@@ -87,6 +97,7 @@
                         <div class="container">
                             <div class="carousel-caption">
                                  <h4>Grace Hopper</h4>
+
                             </div>
                         </div>
                     </div>
@@ -94,7 +105,8 @@
                         <img class="img-responsive" src="./img/barbarabeskind.jpg" style="width: 100%" alt="another hero image">
                         <div class="container">
                             <div class="carousel-caption">
-                                	<h4>Barbara Beskind</h4>
+                                    <h4>Barbara Beskind</h4>
+
                             </div>
                         </div>
                     </div>
@@ -102,212 +114,248 @@
                         <img class="img-responsive" src="./img/radiaperlman.jpg" style="width: 100%" alt="third hero image">
                         <div class="container">
                             <div class="carousel-caption">
-                                	<h4>Radia Perlman</h4>
+                                    <h4>Radia Perlman</h4>
+
                             </div>
                         </div>
                     </div>
                 </div>
-</div>
+            </div>
             <div class="container anchor" id="process">
-                <div class="container" id="history"><div class="anchordiv">
-                    <div class="skills-column">
-                        	<h3>Women in Computer Science</h3>
+                <div class="container" id="history">
+                    <div class="anchordiv">
+                        <div class="skills-column">
+                                <h3>A Brief History of Women in Computer Science</h3>
 
-                        <ul id="skill_list">
-                            <li>Admiral Grace Hopper, active in her 90s</li>
-                            <li>Radia Perlman, xxx</li>
-                            <li>Barbara Beskind, xxx</li>
-                            <li>Carly Fiorina, xxx</li>
-                            <li>Mary Lou Jepsen, xxx</li>
-                            <li>Shafi Goldwasser, xxx</li>
-                        </ul>
-                    </div></div>
-                    <div class="main_text" style= "margin-right: 10%">
-                        	<h3>Why Not You?</h3>
+                            <ul id="skill_list">
+                                <li>Admiral Grace Hopper, active in her 90s</li>
+                                <li>Radia Perlman, xxx</li>
+                                <li>Barbara Beskind, xxx</li>
+                                <li>Carly Fiorina, xxx</li>
+                                <li>Mary Lou Jepsen, xxx</li>
+                                <li>Shafi Goldwasser, xxx</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main_text" style="margin-right: 10%">
+                            <h3>Why Not You?</h3>
 
                         <p>No matter whether you stayed at home with the children or worked outside the home, you have a wealth of experience and knowledge that few young people can imagine. Your point-of-view is representative of a certain generation that just happens to have the most expendable income and just happens to be the biggest market in the next several years.</p>
                         <p>Companies are looking for new applications to meet the growing demands of seniors; they are looking for workers who understand the older generation, and they are looking for people such as you who have an unparalleled work ethic.</p>
                         <p>Why shouldn't you be the next Grace Hopper, leading the industry in developing applications, websites, or the next big thing? Sure, you can't start at the top of the tech heap, but if you don't start now, when will you start?</p>
                     </div>
                     <div class="col-md-4">
-                        	<h2>How to Start</h2>
+                            <h2>How to Start</h2>
 
                         <p>First, you need to honestly ask yourself what you want to be when you grow up. We are not our parents, retiring to a golf community at the age of 65. We can expect to live longer and contribute more for longer than any prior generation. Get involved now in order to make your biggest contribution!</p>
                         <p>Do you want to build websites? Program computers? Test for usability? Help businesses (including nonprofits) optimize their websites? There are so many career choices you can make! Check out what's available and of interest to you, and then talk with others already in the field to make sure it's what you want.</p>
                         <p>After you have chosen areas of interest, check out the educational requirements. These days, you don't necessarily need a computer science degree, and most training can be obtained from online programs that allow you to learn at your own pace.</p>
                         <p><a class="btn btn-default" href="#" role="button">View details »</a>
+
                         </p>
                     </div>
                     <div class="col-md-4">
-                        	<h2>Why Primetime?</h2>
+                            <h2>Why Primetime?</h2>
 
                         <p>This website and community are for you. We want to encourage other women around our age to explore career and educational opportunities. We want others to feel that they are not alone in their paths; we are all in this together. We want to build a better world for primetime women choosing to work in technology.</p>
                         <p><a class="btn btn-default" href="#" role="button">View details »</a>
+
                         </p>
                     </div>
                     <div class="col-md-4">
-                        	<h2>Course Goals</h2>
+                            <h2>Course Goals</h2>
 
                         <p>I have been toying with online resources for learning web development for a few years, unsure if I wanted to go this route. I have determined that I do, so this program will provide me the education (and confidence?) to strike out and call myself a web developer, able to work alongside the best newcomers and learn to be among the best old-timers at some point. I'm not one who stops after learning the basics, but will continue to learn for as long as I am able.</p>
                         <p><a class="btn btn-default" href="#" role="button">View details »</a>
+
                         </p>
                     </div>
                 </div>
             </div>
             <div class="container anchor" id="process">
                 <!-- padding -->
-                <div class="container" id="careers"><div class="anchordiv">
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-new">
-                            	<h3 class="panel-title-new">
-		<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What kinds of jobs are out there?</a>
-	</h3>
+                <div class="container" id="careers">
+                    <div class="anchordiv"><h2>Careers in Computer Science</h2>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-new">
+                                    <h3 class="panel-title-new">
+                                
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What kinds of jobs are out there?</a>
+    </h3>
 
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>To answer that question, let's ask a few more:</p>
-                                <ul>
-                                    <li>Do you have a product, service, or message you want to offer others?</li>
-                                    <li>Are you too successful without a site that you can afford to turn away business</li>
-                                </ul>
-                                <p>If the answer to these are yes and no, respectively, then you probably need a website that will help you:</p>
-                                <ul>
-                                    <li>communicate with others, telling your story and letting others know about your and your offerings.</li>
-                                    <li>build a following or community.</li>
-                                    <li>become more successful in your efforts at a relatively low cost and reaching more people than you could through any other medium.</li>
-                                </ul>
                             </div>
-                        </div>
-                        <div class="panel panel-new">
-                            	<h3 class="panel-title-new">
-		<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Aren't I too old to work in tech?</a>
-	</h3>
-
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>I'm big on usability and accessibility, and you'll hear me rant and rave about how your site needs to be both.</p>
-                                <p>Think of it this way. What good is your investment (and yes, it is an investment) in your website if you simply irritate visitors by not making it as usable as possible? Would you purposely build walls where doors should be in your office or store? Would you put up gates deterring shoppers or clients?</p>
-                                <p>Ensuring a usable site will pay off by allowing visitors to accomplish their goals--their reason for coming to your site--and help you accomplish your goals in building the site. It's a win-win situation!</p>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>To answer that question, let's ask a few more:</p>
+                                    <ul>
+                                        <li>Do you have a product, service, or message you want to offer others?</li>
+                                        <li>Are you too successful without a site that you can afford to turn away business</li>
+                                    </ul>
+                                    <p>If the answer to these are yes and no, respectively, then you probably need a website that will help you:</p>
+                                    <ul>
+                                        <li>communicate with others, telling your story and letting others know about your and your offerings.</li>
+                                        <li>build a following or community.</li>
+                                        <li>become more successful in your efforts at a relatively low cost and reaching more people than you could through any other medium.</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="panel panel-new">
-                            	<h3 class="panel-title-new">
-		<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">What's it like for a woman in tech?</a>
-	</h3>
+                            <div class="panel panel-new">
+                                    <h3 class="panel-title-new">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Aren't I too old to work in tech?</a>
+    </h3>
 
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>That depends on a lot of things.</p>
-                                <ul>
-                                    <li>Is your site written in such a way that visitors want to purchase your services or goods?</li>
-                                    <li>Is it easy for visitors to make a purchase or contact you to arrange for services?</li>
-                                    <li>Is your site more attractive, easier to use, or offering something unique to attract buyers?</li>
-                                </ul>
-                                <p>Making sure your content is written for the right audience, optimized for web (it's a different language and style than print), and that your offerings are clear and enticing will go a long way toward paying for your investment and more.</p>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>I'm big on usability and accessibility, and you'll hear me rant and rave about how your site needs to be both.</p>
+                                    <p>Think of it this way. What good is your investment (and yes, it is an investment) in your website if you simply irritate visitors by not making it as usable as possible? Would you purposely build walls where doors should be in your office or store? Would you put up gates deterring shoppers or clients?</p>
+                                    <p>Ensuring a usable site will pay off by allowing visitors to accomplish their goals--their reason for coming to your site--and help you accomplish your goals in building the site. It's a win-win situation!</p>
+                                </div>
+                            </div>
+                            <div class="panel panel-new">
+                                    <h3 class="panel-title-new">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">What's it like for a woman in tech?</a>
+    </h3>
 
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>That depends on a lot of things.</p>
+                                    <ul>
+                                        <li>Is your site written in such a way that visitors want to purchase your services or goods?</li>
+                                        <li>Is it easy for visitors to make a purchase or contact you to arrange for services?</li>
+                                        <li>Is your site more attractive, easier to use, or offering something unique to attract buyers?</li>
+                                    </ul>
+                                    <p>Making sure your content is written for the right audience, optimized for web (it's a different language and style than print), and that your offerings are clear and enticing will go a long way toward paying for your investment and more.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div></div>
+            </div>
             <div class="container anchor" id="process">
-            <div class="container" id="portfolio"><div class="anchordiv">
+                <div class="container" id="portfolio">
+                    <div class="anchordiv">
+                        
+<h2>Other Women in Computer Science</h2>
 
-                <div class="row">
-                    <div class="col-md-2 col-xs-6">
-                        <img src="./img/maryloujepsen.jpg" class="img-responsive" alt="Mary Lou Jepsen"><figcaption>Mary Lou Jepsen</figcaption>
-</figure>
-                        <br>
-                    </div>
-                    <div class="col-md-2 col-xs-6">
-                        <img src="./img/carlyfiorina.jpg" class="img-responsive" alt="Carly Fiorina"><figcaption>Carly Fiorina</figcaption>
-</figure>
-                        <br>
-                    </div>
-                    <div class="col-md-2 col-xs-6">
-                        <img src="./img/Shafi_Goldwasser.jpg" class="img-responsive" alt="Shafi Goldwasser"><figcaption>Shafi Goldwasser</figcaption>
-</figure>
-                        <br>
-                    </div>
-                    <div class="col-md-2 col-xs-6">
-                        <img src="./img/maryloujepsen.jpg" class="img-responsive" alt="Mary Lou Jepsen"><figcaption>Mary Lou Jepsen</figcaption>
-</figure>
-                        <br>
-                    </div>
-                    <div class="col-md-2 col-xs-6">
-                        <img src="./img/carlyfiorina.jpg" class="img-responsive" alt="Carly Fiorina"><figcaption>Carly Fiorina</figcaption>
-</figure>
-                        <br>
-                    </div>
-                    <div class="col-md-2 col-xs-6">
-                        <img src="./img/Shafi_Goldwasser.jpg" class="img-responsive" alt="Shafi Goldwasser"><figcaption>Shafi Goldwasser</figcaption>
-</figure>
-                        <br>
-                    </div>
-                    </div></div>
-            </div>
-            </div>
-     <div class="anchordiv">                      <!-- padding -->
-                <div class="container" id="contact">
-                    <div class="col-md-6">
-                            <h2>Contact Us</h2>
+                        <div class="row">
+                            <div class="col-md-2 col-xs-6">
+                                <img src="./img/maryloujepsen.jpg" class="img-responsive" alt="Mary Lou Jepsen">
+                                <figcaption>ML Jepsen</figcaption>
 
-                            <h4>Kate Russell</h4>
-
-                            <h4>269-362-4098 <span class="glyphicon glyphicon-star"></span></h4>
-
-                            <h4>2391 Yankee St. <span class="glyphicon glyphicon-home"></span><br>
-                    Niles, MI 49120</h4>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="socia-new" style="padding-top: 2em">
-
-                            <li><a href="mailto:katerussell@sbsclgobal.net">Email <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
-                            </li>
-                            <li><a href="https://twitter.com/krussellnd">Twitter <span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
-                            </li>
-                            <li><a href="http://www.linkedin.com/in/kateruss">LinkedIn <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span></a>
-                            </li>
-                        </ul>
+                            </div>
+                            <div class="col-md-2 col-xs-6">
+                                <img src="./img/carlyfiorina.jpg" class="img-responsive" alt="Carly Fiorina">
+                                <figcaption>C Fiorina</figcaption>
+                            </div>
+                            <div class="col-md-2 col-xs-6">
+                                <img src="./img/Shafi_Goldwasser.jpg" class="img-responsive" alt="Shafi Goldwasser">
+                                <figcaption>S Goldwasser</figcaption>
+                            </div>
+                            <div class="col-md-2 col-xs-6">
+                                <img src="./img/maryloujepsen.jpg" class="img-responsive" alt="Mary Lou Jepsen">
+                                <figcaption>ML Jepsen</figcaption>
+                                <br>
+                            </div>
+                            <div class="col-md-2 col-xs-6">
+                                <img src="./img/carlyfiorina.jpg" class="img-responsive" alt="Carly Fiorina">
+                                <figcaption>C Fiorina</figcaption>
+                                <br>
+                            </div>
+                            <div class="col-md-2 col-xs-6">
+                                <img src="./img/Shafi_Goldwasser.jpg" class="img-responsive" alt="Shafi Goldwasser">
+                                <figcaption>S Goldwasser</figcaption>
+                                 <br>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
-            <div id="video">
-            <iframe width="210" height="158" src="https://www.youtube.com/embed/Ux23X__4aX0?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-            <script src="./js/jquery.min.js"></script>
-            <script src="./js/bootstrap.min.js"></script>
-            <script src="./js/bootstrap.js">
-                
-            </script>
-            <script type="text/javascript">
-            var $root = $('html, body');
-            $('.navbar-nav a').click(collapse() {
-                var href = $.attr(this, 'href');
-                $root.animate({
-                    scrollTop: $(href).offset().top}, 500, function () {
-                        window.location.hash = href;
-                    });
-                return false;
-            });
-            </script>
-    <footer style="background-color: lightgray"> 
-    <div style="padding-left: 3%">&copy; PrimeTime Women 2015</div>
+            <div class="anchordiv">
+                <!-- padding -->
+                <div class="col-lg4 col-md-4" style="padding: 0 0 1% 2%">
+                    <div class="container" id="contact">
+                        
+<h2>Contact Us</h2>                       
+<h4>Kate Russell</h4>                       
+<h4>269-362-4098</h4>                       
+<h4>2391 Yankee St.<br>
+Niles, MI 49120</h4>
+                        <div>
+                            <form>
+                                <div "col-lg-8 col-md-8" class="form-group">
+                                <label>Your Name</label>
+                                    <input placeholder="Enter your first and last name here" type="text" class="form-control" id="name">
+                                    <label class="sr-only" for="name">Name</label>
+                                   <span>  </span><label>Your Phone Number</label>
+                                        <input class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text">
 
- 
+                                       <label class="sr-only" for="name">Telephone number</label></div>
+                                <div>
+                                <label>Your Email</label>
+                                    <input placeholder="Enter your email address" title="Required field; please enter full email address" type="email" class="form-control" id="email" required=”required”>
+                                    <label class="sr-only" for="name">Email address</label>
+                                    </div>
+                                <div>
+                                <label>Tell Us Something!</label>
+                                    <textarea placeholder="Enter your message here" style="padding-left: 12px" class="message-box" style="resize: none" cols="126" rows="5" id="message"></textarea>
+                                    <label class="sr-only" for="message">Message</label>
+                                    
+                                <button type="submit" class="btn btn-info">Submit
+                                </button>
+                                </div>
+                                </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+                                
+        <div class="video">
+            <iframe width="420" height="316" src="https://www.youtube.com/embed/Ux23X__4aX0?rel=0" frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+<div class="footer">
+&copy; PrimeTime Women 2015
 <!-- Facebook -->
-<div id="share-buttons">
-<a style="margin-left: 60%" href="https://www.facebook.com/pages/PrimeTime-Women-in-Tech/1032879200069230" target="_blank"><img src="./img/fb_share.png" style="vertical-align: top" alt="Facebook" /></a>
+<div id="share-buttons" style="float: right" >
+<a href="https://www.facebook.com/pages/PrimeTime-Women-in-Tech/1032879200069230" target="_blank"><img src="./img/fb_share.png" style="vertical-align: top" alt="Facebook"></a>
 
-<a style="float: right" href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a>
+<a padding-left: 1em href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a></div>                      </footer>
+</div>
 
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-</footer> 
+                        <script src="./js/jquery.min.js"></script>
+                        <script src="./js/bootstrap.min.js"></script>
+                        <script src="./js/bootstrap.js">
+                            
+                        </script>
+                        <script type="text/javascript">
+                            var $root = $('html, body');
+                            $('.navbar-nav a').click(collapse() {
+                                var href = $.attr(this, 'href');
+                                $root.animate({
+                                    scrollTop: $(href).offset().top
+                                }, 500, function() {
+                                    window.location.hash = href;
+                                });
+                                return false;
+                            });
+                        </script>
+ 
+                                <script>
+                                    ! function(d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0],
+                                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                                        if (!d.getElementById(id)) {
+                                            js = d.createElement(s);
+                                            js.id = id;
+                                            js.src = p + '://platform.twitter.com/widgets.js';
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }
+                                    }(document, 'script', 'twitter-wjs');
+                                </script>
         </body>
-
 
 </html>

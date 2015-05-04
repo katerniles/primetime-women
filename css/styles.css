@@ -10,24 +10,28 @@ body {
     position: relative;
     margin-right: 10%;
 }
-#video {
-    text-align: center;
-    padding: 1em 0 0 1em;
+.form-control {
+    width: 80%;
 }
-<style type="text/css">
+.video {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20em;
+}
+/*<style type="text/css">
  
-#share-buttons img {
-width: 35px;
-padding: 5px;
+*/
+#share-buttons img twitter-share-button{
 border: 0;
 box-shadow: 0;
-display: inline;
+display: inline-block;
 }
  
-</style>
-.twitter-share-button {
+
+/*.twitter-share-button {
     margin-left: 85%;
-}
+}*/
 .anchordiv {
     padding-top: 100px;
 }
@@ -59,9 +63,13 @@ ul.socia-new {
     /*Have the background cover the entire div section*/
     color: white;
     /*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
-    padding: 100px;
-    padding-top: 50px;
-    height: 400px;
+    padding: 10% 5% 5% 5%;
+
+}
+.footer {
+    width: cover;
+    padding: 2em;
+    background-color: lightgray;
 }
 
 .button-link {
