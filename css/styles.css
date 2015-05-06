@@ -2,7 +2,13 @@
 /*.bannerContainer {
     position:relative;   
 }*/
-
+.learn-more {
+    text-align: left;
+    float: left;
+}
+.modal-button {
+    float: right;
+}
 body {
 
     background-image: url("../img/wpid-Binary-Wallpaper-19.jpg");
@@ -37,6 +43,8 @@ display: inline-block;
 }
 #accordion {
       background-color: #ededed;
+      margin-left: 15px;
+
 }
 ul.socia-new {
     list-style: none;
