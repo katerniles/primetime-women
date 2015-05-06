@@ -18,6 +18,7 @@ body {
 }
 .form-control {
     width: 80%;
+
 }
 .video {
     display: block;
@@ -71,7 +72,7 @@ ul.socia-new {
     /*Have the background cover the entire div section*/
     color: white;
     /*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
-    padding: 10% 5% 5% 5%;
+    padding: 0 5% 5% 5%;
 
 }
 .footer {
