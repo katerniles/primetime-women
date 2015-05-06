@@ -8,7 +8,19 @@
 }
 .modal-button {
     float: right;
+ }
+.modal-body {
+    height: 500px;
+ }
+ .hide-block{
+    display: none;
 }
+
+ #modalframe {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+ }
 body {
 
     background-image: url("../img/wpid-Binary-Wallpaper-19.jpg");
@@ -44,7 +56,7 @@ display: inline-block;
 }
 #accordion {
       background-color: #ededed;
-      margin-left: 15px;
+      margin: 0 9%;
 
 }
 ul.socia-new {
