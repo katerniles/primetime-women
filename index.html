@@ -9,10 +9,17 @@
         <link href="./css/styles.css" rel="stylesheet">
         <link href="./css/normalize.css" rel="stylesheet">
         <link href="./css/bootstrap.css" rel="stylesheet">
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script>
+            $(function () {
+                $('#This is a tooltip. Pretty snazzy, eh?').tooltip();
+            });
+            </script>
         <!--jQuery Media Script -->
         <script src="./js/jquery.media.js" type="text/javascript"></script>
+         <!--jQuery Script-->
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <!-- responsive nav js -->
         <script src="./js/responsive-nav.js"></script>
         <script src="./js/formvalidation.js"></script>
@@ -25,6 +32,12 @@
                 console.log("window loaded");
             });
         </script>
+        <script>
+        $(function (){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        </script>
+        
         <script>
             $(document).ready(function() {
                 // Target your .container, .wrapper, .post, etc.
@@ -142,7 +155,7 @@
                     <div class="main_text" style="margin-right: 10%">
                             <h3>Why Not You?</h3>
  
-                        <p>No matter whether you stayed at home with the children or worked outside the home, you have a wealth of experience and knowledge that few young people can imagine. Your point-of-view is representative of a certain generation that just happens to have the most expendable income and just happens to be the biggest market in the next several years.</p>
+                        <p>No matter whether you stayed at home with the children or worked outside the home, you have a wealth of experience and knowledge that few young people can imagine. Your point-of-view is representative of a certain generation that just happens to have the most expendable income and just happens to be the biggest market in the next several years. <a href="#" title="More information" id="item1">Tooltips</a></p>
                         <p>Companies are looking for new applications to meet the growing demands of seniors; they are looking for workers who understand the older generation, and they are looking for people such as you who have an unparalleled work ethic.</p>
                         <p>Why shouldn't you be the next Grace Hopper, leading the industry in developing applications, websites, or the next big thing? Sure, you can't start at the top of the tech heap, but if you don't start now, when will you start?</p>
                     </div>
@@ -152,7 +165,7 @@
                         <p>First, you need to honestly ask yourself what you want to be when you grow up. We are not our parents, retiring to a golf community at the age of 65. We can expect to live longer and contribute more for longer than any prior generation. Get involved now in order to make your biggest contribution!</p>
                         <p>Do you want to build websites? Program computers? Test for usability? Help businesses (including nonprofits) optimize their websites? There are so many career choices you can make! Check out what's available and of interest to you, and then talk with others already in the field to make sure it's what you want.</p>
                         <p>After you have chosen areas of interest, check out the educational requirements. These days, you don't necessarily need a computer science degree, and most training can be obtained from online programs that allow you to learn at your own pace.</p>
-                        <p><a class="btn btn-default" href="#" role="button">View details »</a>
+                        <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">View More.</button>
  
                         </p>
                     </div>
@@ -160,15 +173,20 @@
                             <h2>Why Primetime?</h2>
  
                         <p>This website and community are for you. We want to encourage other women around our age to explore career and educational opportunities. We want others to feel that they are not alone in their paths; we are all in this together. We want to build a better world for primetime women choosing to work in technology.</p>
-                        <p><a class="btn btn-default" href="#" role="button">View details »</a>
+                        <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">View More.</button>
  
                         </p>
                     </div>
                     <div class="col-md-4">
-                            <h2>Course Goals</h2>
+                            <h2>Other Resources</h2>
  
-                        <p>I have been toying with online resources for learning web development for a few years, unsure if I wanted to go this route. I have determined that I do, so this program will provide me the education (and confidence?) to strike out and call myself a web developer, able to work alongside the best newcomers and learn to be among the best old-timers at some point. I'm not one who stops after learning the basics, but will continue to learn for as long as I am able.</p>
-                        <p><a class="btn btn-default" href="#" role="button">View details »</a>
+                        <p>Perhaps you're not ready for Primetime. Or perhaps you want to gather a lot more information before making a decision. Or, perhaps you're a lot like us and want as much support and information as possible as you enter this new phase of your life. We understand! So here, we'll be listing all sorts of resources we've found helpful. Perhaps you will, as well!</p>
+                        <ul>
+                            <li>Women Who Code</li>
+                            <li>Another resource</li>
+                            <li>and another ... </li>
+                        </ul>
+                        <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">View More.</button>
  
                         </p>
                     </div>
