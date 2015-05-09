@@ -9,6 +9,7 @@
 .modal-button {
     float: right;
  }
+
 .modal-body {
     height: 500px;
  }
@@ -26,7 +27,7 @@ body {
     background-image: url("../img/wpid-Binary-Wallpaper-19.jpg");
     background-attachment: fixed;
     position: relative;
-    margin-right: 10%;
+    margin: 0 10% 0 10%;
 }
 .form-control {
     width: 80%;
@@ -166,6 +167,10 @@ ul.socia-new {
 .anchordiv {
     padding-top: 100px;
 }
+.anchordiv h2 {
+    background-color: lightgray;
+    color: black;
+}
 .nav {
     float: right;
 }
@@ -273,6 +278,7 @@ p, li {
     width: 80%;
     align: left;
     padding: 15em 5em 5em 0;
+    margin-left: 0;
 
 }
 .img-responsive {
@@ -285,5 +291,7 @@ p {
     color: auto;
 
 }
-
+.container h2 {
+    margin-left: 5%;
+}
 
