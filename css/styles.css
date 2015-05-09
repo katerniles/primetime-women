@@ -1,102 +1,28 @@
-
-/*.bannerContainer {
-    position:relative;   
-}*/
-.learn-more {
-    text-align: left;
-    float: left;
+a:link, a:visited {
+    display: inline;
+    width: auto;
+    font-size: 1em;
+ }
+ #accordion {
+      background-color: #ededed;
+      margin: 0 9%;
 }
-.modal-button {
-    float: right;
- }
-
-.modal-body {
-    height: 500px;
- }
- .hide-block{
-    display: none;
+.anchordiv {
+    padding-top: 100px;
 }
-
- #modalframe {
-    padding: 10px;
-    width: 100%;
-    height: 100%;
- }
+.anchordiv h2 {
+    background-color: lightgray;
+    color: black;
+}
 body {
-
     background-image: url("../img/wpid-Binary-Wallpaper-19.jpg");
     background-attachment: fixed;
     position: relative;
     margin: 0 10% 0 10%;
 }
-.form-control {
-    width: 80%;
-
-}
-.video {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20em;
-}
-/*<style type="text/css">
- 
-*/
-#share-buttons img twitter-share-button{
-border: 0;
-box-shadow: 0;
-display: inline-block;
-}
- 
-
-/*.twitter-share-button {
-    margin-left: 85%;
-}*/
-.anchordiv {
-    padding-top: 100px;
-}
-#accordion {
-      background-color: #ededed;
-      margin: 0 9%;
-
-}
-ul.socia-new {
-    list-style: none;
-    width: auto;
-    display: inline-block;
-    font-size: 1.5em;
-    background-color: white;
-    padding: 0 1em 1em 1em;
-    border-radius: 4px;
-
-}
-.projectName  {
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    padding: 0 0 0 30px;
-}
-#contact{
-    background-image: url("../img/desktop.jpg");
-    /*Add a background image*/
-    background-attachment: fixed;
-    /*Give the background a fixed position; it does not scroll when you scroll*/
-    background-size: cover;
-    /*Have the background cover the entire div section*/
-    color: white;
-    /*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
-    padding: 0 5% 5% 5%;
-
-}
-.footer {
-    width: cover;
-    padding: 2em;
-    background-color: lightgray;
-}
-
 .button-link {
     padding: 2px;
-     text-decoration: underline;
+    text-decoration: underline;
     text-transform: capitalize;
     font-size: 5em;
     font-weight: bold;
@@ -115,17 +41,17 @@ ul.socia-new {
     -ms-user-select:none;
     user-select:none;
 }
-.button-link:hover {
-    background-color: #white;
-    border: solid 1px #white;
-    text-decoration: none;
-}
 .button-link:active {
     -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
     background: #white;
     border: solid 1px #203E5F;
+}
+.button-link:hover {
+    background-color: #white;
+    border: solid 1px #white;
+    text-decoration: none;
 }
 #carousel {
     position: relative;
@@ -136,7 +62,6 @@ ul.socia-new {
     top: 1%;
     max-height: 50%;
 }   
-
 .carousel-inner {
     margin: 0 auto;
 }
@@ -145,34 +70,78 @@ ul.socia-new {
     height: 100% !important; 
     margin: 0 auto;
 }
-
 .carousel-caption h4 {
     color: black;
     font-size: 1em;
     text-align: center;
     background-color: #D3D3D3;
     margin: 70% 80% 20% 10%;
-
 }
-.navbar-default {
-    margin-left: -1.2em !important; 
-    text-align: left;
-    background-color: #222;
-    margin-top: 250px;
+.carousel-indicators {
+    background-color: DarkGrey;
+    width: 20% !important;
+    position: relative;
+    padding-bottom: 5%;
 }
-/*.an-default {
-    margin-left: -1.2em !important; 
-    background-color: transparent;*/
-
-.anchordiv {
-    padding-top: 100px;
+#contact{
+    background-image: url("../img/desktop.jpg");
+    /*Add a background image*/
+    background-attachment: fixed;
+    /*Give the background a fixed position; it does not scroll when you scroll*/
+    background-size: cover;
+    /*Have the background cover the entire div section*/
+    color: white;
+    /*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+    padding: 0 5% 5% 5%;
 }
-.anchordiv h2 {
+.container {
+    width: 80%;
+    align: left;
+    padding: 15em 5em 5em 0;
+    margin-left: 0;
+}
+.container h2 {
+    margin-left: 5%;
+}
+.footer {
+    width: cover;
+    padding: 2em;
     background-color: lightgray;
-    color: black;
 }
-.nav {
-    float: right;
+.form-control {
+    width: 80%;
+}
+/*Typography*/
+h1, h2, h3 {
+    font-family: Futura, Helvetica, Arial, sans-serif;
+}
+.header {
+    min-height: 20%;
+    width: 100%;
+    padding-left: 3em;
+ }
+ 
+.header, h1 {
+    text-align: left;
+    padding-bottom: .25em;
+    padding-left: 3em;
+}
+.hide-block{
+    display: none;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.intro h2 {
+    font-size: 2em;
+    font-weight: 300;
+    ~web-kit-margin-before: 0;
+}
+.learn-more {
+    text-align: left;
+    float: left;
 }
 /* large desktop */
 @media (min-width: 1200px) {
@@ -200,19 +169,6 @@ ul.socia-new {
             line-height: 1.4;
         }
         }
-
-
-.skills h3 {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.nav { width: 100%;}
-.nav ul { list-style: none; text-transform: capitalize; padding: 0px; margin-left: -1.2em; font-size: 2em; font-weight: bold; text-align: center; }
-.nav ul li { display: inline-block; }
-.nav ul li a { display: inline-block; padding: 0 0 0 0; text-decoration: none;}
-.nav ul li a:hover {color: DarkGreen; }
-
 @media (max-width:48.000em){
     .example-header .container { width: 100%; }
     .nav ul { width: 100%; font-weight: normal; }
@@ -220,26 +176,35 @@ ul.socia-new {
     .nav ul li:nth-of-type(odd) a { }
     .nav ul li a { padding: 8px 0px; border-bottom: 1px solid #ccc; display: block; }
 }
-
-a:link, a:visited {
-    display: inline;
-    width: auto;
-    font-size: 1em;
-
+.modal-button {
+    float: right;
  }
-.header {
-    min-height: 20%;
+.modal-body {
+    height: 500px;
+ }
+ #modalframe {
+    padding: 10px;
     width: 100%;
-    padding-left: 3em;
-
+    height: 100%;
  }
- 
-.header, h1 {
-    text-align: left;
-    padding-bottom: .25em;
-    padding-left: 3em;
+ .nav {
+    float: right;
+    width: 100%;
 }
-
+.nav ul { list-style: none; text-transform: capitalize; padding: 0px; margin-left: -1.2em; font-size: 2em; font-weight: bold; text-align: center; }
+.nav ul li { display: inline-block; }
+.nav ul li a { display: inline-block; padding: 0 0 0 0; text-decoration: none;}
+}
+.navbar-default {
+    margin-left: -1.2em !important; 
+    text-align: left;
+    background-color: #222;
+    margin-top: 250px;
+}
+p {
+    font-size: 1em
+    color: auto;
+}
 p a:link, a:visited {
     display: inline;
     text-transform: underline;
@@ -247,51 +212,39 @@ p a:link, a:visited {
 }
 /* mouse over link */
 p, li a:hover {
-    font-size: 1em;
-}
-p, li {
-    font-size: 1em;
-}
-.carousel-indicators {
-    background-color: DarkGrey;
-    width: 20% !important;
-    position: relative;
-    padding-bottom: 5%;
-}
-/*Typography*/
-h1, h2, h3 {
-	font-family: Futura, Helvetica, Arial, sans-serif;
-}
-.intro h2 {
-	font-family: Futura, Helvetica, Arial, sans-serif;
-    font-size: 2em;
-    font-weight: 300;
-    ~web-kit-margin-before: 0;
-
+    font-size: 1.3em;
 }
 p, li {
     font-size: 1.2em;
     margin: auto .2em auto 0.2em !important;
 }
-
-.container {
-    width: 80%;
-    align: left;
-    padding: 15em 5em 5em 0;
-    margin-left: 0;
-
+.projectName  {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 0 0 0 30px;
 }
-.img-responsive {
+#share-buttons img twitter-share-button{
+    border: 0;
+    box-shadow: 0;
+    display: inline-block;
+}  
+ul.socia-new {
+    list-style: none;
+    width: auto;
+    display: inline-block;
+    font-size: 1.5em;
+    background-color: white;
+    padding: 0 1em 1em 1em;
+    border-radius: 4px;
+}
+.video {
     display: block;
-    max-width: 100%;
-    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20em;
 }
-p {
-    font-size: 1em
-    color: auto;
-
+.women h3 {
+    text-align: center;
+    text-transform: uppercase;
 }
-.container h2 {
-    margin-left: 5%;
-}
-
