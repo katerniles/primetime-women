@@ -120,7 +120,6 @@ select,
 textarea {
   margin: 0;
   font: inherit;
-  color: inherit;
 }
 button {
   overflow: visible;
@@ -913,6 +912,7 @@ textarea {
   /* font-family: inherit; */
   /* font-size: inherit; */
   /* line-height: inherit; */
+
 }
 a {
   color: DarkGrey;

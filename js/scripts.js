@@ -1,9 +1,11 @@
 //$(document).ready(function(){
 	//alert("Document is ready!");
-$("#button").on("click", function() {
-	//all your code goes in here
+$("#btn btn-info").on("click", function() {
 	console.log("clicked");
-	$("#visible-comment").html(comment);
 	var comment = $(".comment-box").val();
 	return false;
+$("#visible-comment").html(comment);
+
 }); // no more code below here
+
+
