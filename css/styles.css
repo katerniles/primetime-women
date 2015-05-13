@@ -20,7 +20,7 @@ body {
     background-attachment: fixed;
     position: relative;
     margin: 0 10% 0 10%;
-    background-image: url("./img/binary-Language.jpg");
+    background-image: url("./img/wpid-Binary-Wallpaper-19.jpg");
     background-size: cover;
 }
 .button-link {
@@ -70,15 +70,16 @@ body {
     margin: 0 auto;
 }
 .carousel-caption {
-    top: 1%;
-    max-height: 50%;
+    top: 50%;
+    max-height: 20%;
 }
 .carousel-caption h4 {
     color: black;
     font-size: 1em;
     text-align: center;
     background-color: #D3D3D3;
-    margin: 70% 80% 20% 10%;
+    padding-top: 0 !important;
+
 }
 .carousel-indicators {
     background-color: DarkGrey;
