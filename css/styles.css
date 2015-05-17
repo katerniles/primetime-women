@@ -33,6 +33,9 @@ body {
     margin: 0;
     padding-left: 5%;
 }
+.btn {
+    background-color: darkblue;
+}
 .button-link {
     padding: 2px;
     text-decoration: underline;
@@ -123,16 +126,20 @@ body {
     margin-left: 2%;
     margin-top: -2em;
 }
+.copyright {
+    float: left;
+    padding: 1em 65% 1em 1em;
+
+}
 #email {
     background-color: yellow; 
     max-width: 120;
 }
 .footer {
     width: cover;
-    padding: 2em;
     background-color: #B0E0E6;
     clear: both;  
-    padding:  0 2em 1em 0;"
+    padding:  0 2em 1em 0;
 }
 .form {
     clear: both;
@@ -261,6 +268,8 @@ body {
 }
 .comment-box {
     color: black !important;
+    padding-left: 12px; 
+    resize: none;
 }
 
 .navbar-default {
@@ -273,6 +282,9 @@ body {
 }
 .navbar-inverse {
     background-color: #B0E0E6 !important;
+}
+.navbar-toggle {
+     background-color: gold;
 }
 p {
     font-size: 1em color: auto;
@@ -323,10 +335,16 @@ p, li {
 #share-buttons img twitter-share-button {
     border: 0;
     box-shadow: 0;
+    float: right;   
     display: inline-block;
+
 }
 .spanContact {
     display:inline-block;
+}
+twitter-share-button {
+    float: right;
+    display: inline-block;
 }
 ul.socia-new {
     list-style: none;
@@ -346,8 +364,10 @@ ul.socia-new {
 .videoWrapper {
     position: relative;
     padding-bottom: 20.25%; /* 16:9 */
-    padding-top: 25px;
+    padding-top: 4%;
     height: 0;
+    clear: both; 
+    text-align: center;
 }
 .videoWrapper object,
 .videoWrapper embed,  {
